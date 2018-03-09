@@ -15,7 +15,7 @@ class TrackViewController: UIViewController, UITableViewDataSource,UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         getTrackRecords()
-        
+        print("hghg")
         // Do any additional setup after loading the view, typically from a nib.
     }
     
