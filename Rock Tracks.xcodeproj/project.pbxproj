@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		A77AC2002052F8B900015817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AC1FF2052F8B900015817 /* AppDelegate.swift */; };
-		A77AC2022052F8B900015817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AC2012052F8B900015817 /* ViewController.swift */; };
 		A77AC2052052F8B900015817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77AC2032052F8B900015817 /* Main.storyboard */; };
 		A77AC2072052F8B900015817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77AC2062052F8B900015817 /* Assets.xcassets */; };
 		A77AC20A2052F8B900015817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77AC2082052F8B900015817 /* LaunchScreen.storyboard */; };
 		A77AC2152052F8BA00015817 /* Rock_TracksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AC2142052F8BA00015817 /* Rock_TracksTests.swift */; };
 		A77AC2202052F8BA00015817 /* Rock_TracksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AC21F2052F8BA00015817 /* Rock_TracksUITests.swift */; };
+		A77AC22F2052F90600015817 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AC22E2052F90600015817 /* Constant.swift */; };
+		A77AC2332052F93E00015817 /* TrackDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AC2312052F93E00015817 /* TrackDetailViewController.swift */; };
+		A77AC2342052F93E00015817 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AC2322052F93E00015817 /* TrackViewController.swift */; };
+		A77AC2382052F97100015817 /* JsonSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AC2362052F97100015817 /* JsonSerialization.swift */; };
+		A77AC2392052F97100015817 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AC2372052F97100015817 /* ServiceManager.swift */; };
+		A77AC23C2052F99E00015817 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AC23B2052F99E00015817 /* Track.swift */; };
+		A77AC23F2052FAA200015817 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AC23E2052FAA200015817 /* TrackCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,6 @@
 /* Begin PBXFileReference section */
 		A77AC1FC2052F8B900015817 /* Rock Tracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Tracks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77AC1FF2052F8B900015817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A77AC2012052F8B900015817 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A77AC2042052F8B900015817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A77AC2062052F8B900015817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A77AC2092052F8B900015817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		A77AC21B2052F8BA00015817 /* Rock TracksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rock TracksUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77AC21F2052F8BA00015817 /* Rock_TracksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_TracksUITests.swift; sourceTree = "<group>"; };
 		A77AC2212052F8BA00015817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77AC22E2052F90600015817 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A77AC2312052F93E00015817 /* TrackDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackDetailViewController.swift; sourceTree = "<group>"; };
+		A77AC2322052F93E00015817 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		A77AC2362052F97100015817 /* JsonSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerialization.swift; sourceTree = "<group>"; };
+		A77AC2372052F97100015817 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		A77AC23B2052F99E00015817 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		A77AC23E2052FAA200015817 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +109,12 @@
 		A77AC1FE2052F8B900015817 /* Rock Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				A77AC23D2052F9B000015817 /* CustomCell */,
+				A77AC23A2052F97900015817 /* Modal */,
+				A77AC2352052F94800015817 /* WebserviceClass */,
+				A77AC2302052F92600015817 /* ViewController */,
+				A77AC22D2052F8E200015817 /* Constant */,
 				A77AC1FF2052F8B900015817 /* AppDelegate.swift */,
-				A77AC2012052F8B900015817 /* ViewController.swift */,
 				A77AC2032052F8B900015817 /* Main.storyboard */,
 				A77AC2062052F8B900015817 /* Assets.xcassets */,
 				A77AC2082052F8B900015817 /* LaunchScreen.storyboard */,
@@ -123,6 +139,48 @@
 				A77AC2212052F8BA00015817 /* Info.plist */,
 			);
 			path = "Rock TracksUITests";
+			sourceTree = "<group>";
+		};
+		A77AC22D2052F8E200015817 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				A77AC22E2052F90600015817 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		A77AC2302052F92600015817 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A77AC2312052F93E00015817 /* TrackDetailViewController.swift */,
+				A77AC2322052F93E00015817 /* TrackViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A77AC2352052F94800015817 /* WebserviceClass */ = {
+			isa = PBXGroup;
+			children = (
+				A77AC2362052F97100015817 /* JsonSerialization.swift */,
+				A77AC2372052F97100015817 /* ServiceManager.swift */,
+			);
+			path = WebserviceClass;
+			sourceTree = "<group>";
+		};
+		A77AC23A2052F97900015817 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				A77AC23B2052F99E00015817 /* Track.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		A77AC23D2052F9B000015817 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				A77AC23E2052FAA200015817 /* TrackCell.swift */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +251,7 @@
 				TargetAttributes = {
 					A77AC1FB2052F8B900015817 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					A77AC20F2052F8BA00015817 = {
 						CreatedOnToolsVersion = 9.2;
@@ -259,8 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A77AC2022052F8B900015817 /* ViewController.swift in Sources */,
+				A77AC2382052F97100015817 /* JsonSerialization.swift in Sources */,
+				A77AC23F2052FAA200015817 /* TrackCell.swift in Sources */,
+				A77AC2332052F93E00015817 /* TrackDetailViewController.swift in Sources */,
+				A77AC23C2052F99E00015817 /* Track.swift in Sources */,
 				A77AC2002052F8B900015817 /* AppDelegate.swift in Sources */,
+				A77AC22F2052F90600015817 /* Constant.swift in Sources */,
+				A77AC2392052F97100015817 /* ServiceManager.swift in Sources */,
+				A77AC2342052F93E00015817 /* TrackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,11 +490,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: A-1 Technology Inc";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: A-1 Technology Inc";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2KAL3NND99;
 				INFOPLIST_FILE = "Rock Tracks/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.a1distribute.Rock-Tracks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e71522c1-6486-4583-83b4-7852a46497e8";
+				PROVISIONING_PROFILE_SPECIFIER = Distribute_A1;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,11 +510,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: A-1 Technology Inc";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: A-1 Technology Inc";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2KAL3NND99;
 				INFOPLIST_FILE = "Rock Tracks/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.a1distribute.Rock-Tracks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e71522c1-6486-4583-83b4-7852a46497e8";
+				PROVISIONING_PROFILE_SPECIFIER = Distribute_A1;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
