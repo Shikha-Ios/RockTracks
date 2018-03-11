@@ -60,13 +60,14 @@ class TrackDetailViewController: UIViewController {
        
         // Do any additional setup after loading the view.
     }
-
+    
+    // Button Action Method: launch the browser and show the result.
+    
     @IBAction func btnMoreDetailAction(_ sender: Any) {
 
         let url = URL(string: (objTrackDetail?.trackViewUrl)!)
         let vc = SFSafariViewController(url: url!)
         present(vc, animated: true, completion: nil)
-        //UIApplication.shared.openURL(URL(string: (objTrackDetail?.trackViewUrl)!)!)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
