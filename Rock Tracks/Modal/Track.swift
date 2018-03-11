@@ -22,7 +22,12 @@ class Track {
         trackPrice = parameters["trackPrice"] as! NSNumber
         artistName = parameters["artistName"] as! String
         artworkUrl100 =  parameters["artworkUrl100"] as! String
-        releaseDate =  parameters["releaseDate"] as! String
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let date = dateFormatter.date(from: ((parameters["releaseDate"] as! String).components(separatedBy: "T"))[0])
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        releaseDate           = dateFormatter.string(from: date!)
         trackViewUrl =  parameters["trackViewUrl"] as! String
 
     }

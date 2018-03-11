@@ -15,7 +15,6 @@ class TrackViewController: UIViewController, UITableViewDataSource,UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         getTrackRecords()
-        print("hghg")
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -31,9 +30,9 @@ class TrackViewController: UIViewController, UITableViewDataSource,UITableViewDe
         ServiceManager.getData( Constant.URL.appLogin, completion: { (response, error) in
             
             print(response ?? "")
-            let patientList = response?["results"] as? Array<Any>
-            for patient in patientList! {
-                let obj = Track(patient as! Dictionary<String, Any>)
+            let trackList = response?["results"] as? Array<Any>
+            for track in trackList! {
+                let obj = Track(track as! Dictionary<String, Any>)
                 self.arrData.append(obj)
             }
             DispatchQueue.main.async {
@@ -52,23 +51,23 @@ class TrackViewController: UIViewController, UITableViewDataSource,UITableViewDe
         print(indexPath.section)
         let row  = arrData[indexPath.row]
         let catPictureURL = URL(string: row.artworkUrl100)!
+      
         let session = URLSession(configuration: .default)
         let downloadPicTask = session.dataTask(with: catPictureURL) { (data, response, error) in
             if let e = error {
                 print("Error downloading picture: \(e)")
             } else {
-                
+
                 if let res = response as? HTTPURLResponse {
                     print("Downloaded picture with response code \(res.statusCode)")
                     if let imageData = data {
-                        
+
                         let image = UIImage(data: imageData)
                         let deadlineTime = DispatchTime.now() + .seconds(0)
                         DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
                             cell.imageArtist.image = image
-                            
                         }
-                        
+
                     } else {
                         print("Couldn't get image: Image is nil")
                     }
@@ -77,7 +76,7 @@ class TrackViewController: UIViewController, UITableViewDataSource,UITableViewDe
                 }
             }
         }
-        
+
         downloadPicTask.resume()
         cell.labelTrackName.text = row.trackName
         cell.labelArtist.text = row.artistName

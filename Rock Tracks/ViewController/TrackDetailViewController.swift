@@ -20,7 +20,7 @@ class TrackDetailViewController: UIViewController {
     @IBOutlet weak var selectedImge: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       self.title = "Rock Tracks Details"
         if let photo = objTrackDetail
         {
             let catPictureURL = URL(string: photo.artworkUrl100)!
@@ -33,9 +33,10 @@ class TrackDetailViewController: UIViewController {
                     if let res = response as? HTTPURLResponse {
                         print("Downloaded picture with response code \(res.statusCode)")
                         if let imageData = data {
-                            
-                            let image = UIImage(data: imageData)
-                            self.selectedImge.image = image
+                            DispatchQueue.main.async {
+                                let image = UIImage(data: imageData)
+                                self.selectedImge.image = image                            }
+                           
                             
                         } else {
                             print("Couldn't get image: Image is nil")
